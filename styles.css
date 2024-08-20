@@ -1,0 +1,98 @@
+/* Общие стили для обеих страниц */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header, .footer {
+    background-color: #87ff77;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Flexbox для главной страницы */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.popular-products, .categories {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.product {
+    background-color: #4004e6;
+    padding: 15px;
+    border: 1px solid #ccc;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+/* Псевдокласс для анимации продукта */
+.product:hover {
+    transform: scale(1.05);
+}
+
+.categories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.categories li {
+    background-color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Grid для страницы товара */
+.product-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-info {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+.product a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 15px;
+}
+
+.product a:hover {
+    color: #ff0a33; /* Изменение цвета текста при наведении */
+}
