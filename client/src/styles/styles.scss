@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #222;
+  color: #fff;
+
+  .logout-btn {
+    background-color: #ff5555;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.home {
+  padding: 20px;
+
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    .movie-card {
+      width: 150px;
+      cursor: pointer;
+      text-align: center;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.movie-detail {
+  padding: 20px;
+
+  img {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
